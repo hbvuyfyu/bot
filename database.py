@@ -33,7 +33,7 @@ class DatabasePool:
                 self.pool = psycopg2.pool.ThreadedConnectionPool(
                     minconn=1,
                     maxconn=DB_POOL_SIZE,
-                    dsn=DATABASE_URL
+                    dsn=DATABASE_URL,
                     cursor_factory=RealDictCursor
                 )
                 print("✅ PostgreSQL Pool initialized")
