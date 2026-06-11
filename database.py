@@ -34,6 +34,7 @@ class DatabasePool:
                     minconn=1,
                     maxconn=DB_POOL_SIZE,
                     dsn=DATABASE_URL
+                    cursor_factory=RealDictCursor
                 )
                 print("✅ PostgreSQL Pool initialized")
             else:
