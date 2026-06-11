@@ -9,7 +9,7 @@ from telegram.ext import (
 )
 from config import BOT_TOKEN, ADMIN_IDS, SUPPORT_USER, MAX_WORKERS
 from database import get_db, return_db, cache_clear
-from database_operations import *
+from handlers.database_operations import *
 from datetime import datetime
 import requests
 import random
